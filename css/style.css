@@ -256,8 +256,6 @@ li {
   z-index: 1;
 }
 
-.container {
-}
 .product-center .container {
   height: 100%;
 }
@@ -569,6 +567,9 @@ li {
   }
   .advert-box {
     height: 34rem;
+    margin: 1rem 0;
+  }
+  .product {
     margin: 1rem 0;
   }
 }

@@ -419,4 +419,7 @@ li {
   .advert-box .content h2 {
     color: #fff;
   }
+  .advert-box {
+    height: 35rem;
+  }
 }

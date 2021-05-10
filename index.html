@@ -4,72 +4,77 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lily Rain®</title>
-    <link rel="stylesheet" href="./dist/css/glide.core.min.css" />
-    <link rel="stylesheet" href="./dist/css/glide.theme.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <link rel="shortcut icon" href="./img/logos/user.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <title>LilyRain®</title>
   </head>
   <body>
     <!-- Header -->
-    <header class="header" id="header">
-      <div class="navigation">
-        <div class="container">
-          <nav class="nav">
-            <div class="nav-hamburger">
-              <img src="./img/logos/menu.png" alt="" />
-            </div>
-            <div class="nav-logo">
-              <a href="#header" class="scroll-link">LilyRain®</a>
-            </div>
-            <div class="nav-menu">
-              <div class="menu-top">
-                <span class="nav-category">LilyRain®</span>
-                <a href="#" class="close-toggle">
-                  <img src="./img/logos/close.png" alt="" />
-                </a>
+    <header id="home" class="header">
+      <nav class="nav">
+        <div class="navigation container">
+          <div class="logo">
+            <h1>LilyRain®</h1>
+          </div>
+          <div class="menu">
+            <div class="top-nav">
+              <div class="logo">
+                <h1>LilyRain®</h1>
               </div>
-              <ul class="nav-list">
-                <li class="nav-item">
-                  <a href="#header" class="nav-link scroll-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#category" class="nav-link scroll-link">Category</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#news" class="nav-link scroll-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                  <a href="#contact" class="nav-link scroll-link">Contact</a>
-                </li>
-              </ul>
+              <div class="close">
+                <i class="bx bx-x"></i>
+              </div>
             </div>
-
-            <div class="nav-icons">
-              <a href="#" class="icon-item">
-                <img src="./img/logos/user.png" alt="" />
-              </a>
-              <a href="#" class="icon-item">
-                <img src="./img/logos/search.png" alt="" />
-              </a>
-              <a href="#" class="icon-item">
-                <img src="./img/logos/cart.png" alt="" />
-              </a>
-              <span id="cart-total">36</span>
-            </div>
-          </nav>
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="product.html" class="nav-link">Products</a>
+              </li>
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a href="#account" class="nav-link">Account</a>
+              </li>
+              <li class="nav-item">
+                <a href="cart.html" class="nav-link icon"
+                  ><i class="bx bx-shopping-bag"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <a href="cart.html" class="cart-icon">
+            <i class="bx bx-shopping-bag"></i>
+          </a>
+          <div class="hamburger">
+            <i class="bx bx-menu"></i>
+          </div>
         </div>
+      </nav>
+      <!-- Hero Section -->
+      <img src="img/download1.png" class="hero-img" alt="" />
+      <div class="hero-content">
+        <h2><span class="discount">25%</span> Sale Off</h2>
+        <h1>
+          <span>Summer Vibes</span>
+          <span class="color">Colors On</span>
+        </h1>
+        <a href="#" class="btn">Shop Now!</a>
       </div>
+      <!-- End Hero Section -->
     </header>
     <!-- End Header -->
 
-    <script src="./dist/glide.min.js"></script>
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/products.js"></script>
-    <script src="js/slider.js"></script>
   </body>
 </html>

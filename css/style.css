@@ -1,294 +1,346 @@
 @import url("https://fonts.googleapis.com/css2?family=Poiret+One&family=Roboto&display=swap");
 :root {
-  --ultra: #041d1c;
-  --dark: #295756;
-  --light: #69c8c7;
-  --extra: #a3f0ee;
-  --shadow: rgba(105, 200, 199, 0.35) 0px 5px 15px;
-  --box: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  --orange: rgb(252, 176, 69) 0px 20px 30px -10px;
+  --dark: #408080;
+  --light: #b4e1b4;
 }
-* {
+
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
 html {
-  font-size: 62.5%;
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 
-body,
-input {
-  font-size: 1.6rem;
-  font-weight: 400;
-  font-family: "Poiret One", "Roboto", sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  font-weight: 300;
   color: var(--dark);
+  position: relative;
+  z-index: 1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poiret One", sans-serif;
+  font-size: 4rem;
 }
 
 a {
+  color: inherit;
   text-decoration: none;
-}
-
-ul {
-  list-style: none;
 }
 
 img {
   max-width: 100%;
 }
 
-h3,
-h4 {
-  font-weight: 500;
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.container-md {
+  max-width: 100rem;
+  margin: 0 auto;
 }
 
 .header {
   position: relative;
-}
-
-.container {
   width: 100%;
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 0 1.6rem;
-}
-
-.navigation {
-  position: relative;
-  height: 7rem;
-  box-shadow: var(--shadow);
+  min-height: 100vh;
+  background-color: #eef9ee;
+  overflow: hidden;
 }
 
 .nav {
+  padding: 2rem 0;
+  background-color: var(--light);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  z-index: 999;
+}
+.navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 7rem;
-  width: 100%;
-  padding: 0 1rem;
 }
 
-.nav-logo a {
-  font-size: 6rem;
-  color: var(--dark);
-  text-shadow: var(--box);
-  font-weight: 700;
-}
-.nav-hamburger {
-  display: none;
+.logo h1 {
+  font-size: 5rem;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
 }
 
-.nav-hamburger img {
-  height: 5.3rem;
-  width: 5.3rem;
+.top-nav {
+  display: none;
 }
-.menu-top {
+.nav-list {
+  font-family: "Poiret One", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  z-index: 999;
+}
+.nav-item:not(:last-child) {
+  margin-right: 0.5rem;
+}
+
+.nav-link,
+.nav-link:visited {
+  padding: 0.8rem 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link.icon {
+  font-size: 3rem;
+}
+
+.hamburger {
+  display: none;
+}
+.cart-icon {
   display: none;
 }
 
-.nav-menu {
-  width: 50%;
-}
-.nav-list {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  width: 50%;
-}
-.nav-item:not(:last-child) {
-  margin-right: 1.6rem;
-  padding: 0 2rem;
-}
-.nav-list .nav-link:link,
-.nav-list .nav-link:visited {
-  display: inline-block;
-  font-size: 3rem;
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  color: var(--light);
-  transition: color 0.3s ease-in-out;
-}
-.nav-list .nav-link:hover {
-  color: var(--ultra);
-  text-shadow: var(--box);
-}
-
-.nav-icons {
-  display: flex;
-  position: relative;
-}
-.nav-icons .icon-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  border: 2px solid var(--light);
-  border-radius: 50%;
-  margin: 1rem 1rem;
-}
-.nav-icons .icon-item:hover {
-  border: 3px solid var(--dark);
-}
-.nav-icons .icon-item img {
-  width: 2.5rem;
-  transition: transform 0.3s ease-in;
-}
-
-.icon-item img:hover {
-  transform: scale(1.5);
-}
-.nav-icons #cart-total {
-  font-size: 1.7rem;
+.header .hero-img {
   position: absolute;
-  top: 6px;
-  right: -1px;
-  background-color: orangered;
-  padding: 0.3rem 0.5rem;
-  border-radius: 100%;
-  color: #fff;
-  font-family: "Roboto", sans-serif;
+  bottom: 5%;
+  right: 20rem;
+  height: 83.5rem;
+  object-fit: contain;
+}
+.hero-content {
+  position: absolute;
+  top: 50%;
+  transform: translate(25%, -50%);
 }
 
-/* ==================================================
-================================================== */
+.hero-content h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 7.5rem;
+  margin-bottom: 1rem;
+}
+.hero-content .discount {
+  color: orangered;
+}
+.hero-content h1 span {
+  font-size: 6rem;
+  text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2;
+}
+.hero-content .color {
+  color: orange;
+}
+.btn {
+  display: inline-block;
+  background-color: var(--light);
+  padding: 1rem 4rem;
+  border-radius: 5rem;
+  color: var(--dark);
+  font-size: 2.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin-top: 3rem;
+}
+/* ====================================================
+====================================================
+==================================================== */
 
+@media only screen and (max-width: 1200px) {
+  .container {
+    padding: 0 3rem;
+  }
+  .container-md {
+    padding: 0 3rem;
+  }
+  .header .hero-img {
+    position: absolute;
+    bottom: 10%;
+    right: 5rem;
+    height: 74.5rem;
+    object-fit: contain;
+  }
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: -8%;
+    transform: translate(20%, -50%);
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .header {
+    min-height: 100vh;
+  }
+  .header .hero-img {
+    bottom: 20%;
+    right: 5rem;
+    height: 64.5rem;
+    object-fit: contain;
+  }
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translate(20%, -50%);
+  }
+  .hero-content h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h1 span {
+    font-size: 4rem;
+  }
+}
 @media only screen and (max-width: 768px) {
-  .nav-menu {
+  .navigation {
+    z-index: 999;
+  }
+  .menu {
     position: fixed;
     top: 0;
-    left: -30rem;
-    width: 0;
-    z-index: 999;
+    left: -100%;
+    width: 80%;
+    max-width: 50rem;
     height: 100%;
-    transition: all 0.3s ease;
+    background-color: #eef9ee;
+    transition: all 0.5s ease-in-out;
+    z-index: 100;
   }
-  .nav-menu.open {
+  .menu.show {
     left: 0;
-    width: 30rem;
-    background-color: var(--extra);
   }
-  .nav-logo a {
-    font-size: 3.6rem;
-    color: var(--dark);
-  }
-  .nav-logo {
-    width: 50%;
-    color: var(--extra);
-  }
-  .nav-hamburger {
-    display: block;
-  }
-  .menu-top {
+  .top-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--light);
-    padding: 0.5rem 1rem;
-    box-shadow: var(--shadow);
     background-color: var(--dark);
+    padding: 1.6rem 1.6rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
-  .menu-top img {
-    height: 5.6rem;
-    width: 5.6rem;
-    fill: var(--extra);
+  .top-nav .logo {
+    color: var(--light);
   }
-  .nav-category {
-    color: var(--extra);
-    font-size: 4rem;
-    font-weight: 700;
-    text-shadow: var(--box);
+  .top-nav .close {
+    color: var(--light);
+    font-size: 5rem;
+    padding: 1rem;
+    cursor: pointer;
+  }
+  .cart-icon {
+    display: block;
+    font-size: 5rem;
+  }
+  .hamburger {
+    display: block;
+    font-size: 5rem;
+    padding: 0.5rem;
+    cursor: pointer;
   }
   .nav-list {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 1.6rem 1rem;
+    align-items: start;
+    padding: 1rem 1.6rem;
   }
-  .nav-item:not(:last-child) {
-    margin-right: 0;
-    padding: 0;
+  .nav-link,
+  .nav-link:visited {
+    display: block;
+    font-size: 3rem;
+    padding: 2rem 0;
+    text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
-  .nav-item {
-    width: 100%;
+  .nav.fix-nav .nav-link {
+    color: var(--dark);
   }
-  .nav-list .nav-link:link,
-  .nav-list .nav-link:visited {
-    padding: 4.6rem 0;
-    font-size: 4rem;
-    width: 100%;
-    color: var(--light);
+  .nav-link.icon {
+    display: none;
   }
-  .nav-list .nav-link:hover {
-    font-weight: 700;
-    color: var(--ultra);
-    text-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  }
-  body.active::before {
+  body.show::before {
     content: "";
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--dark) none no-repeat 0 0;
-    opacity: 0.7;
-    z-index: 999;
-    transition: 0.8s;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 4;
   }
-  .nav-icons .icon-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    padding: 0;
-    margin: 1rem 1rem;
+  .nav.show {
+    background-color: rgba(0, 0, 0, 0.8);
   }
-  .nav-icons .icon-item img {
-    width: 4rem;
+  .header .hero-img {
+    position: absolute;
+    bottom: 45%;
+    right: -2rem;
+    height: 54.5rem;
+    object-fit: contain;
   }
-  .nav-icons .icon-item:hover {
-    border: none;
+  .header {
+    min-height: 100vh;
+  }
+  .header .hero-img {
+    bottom: 20%;
+    right: 0.2rem;
+    height: 65rem;
+    object-fit: contain;
+  }
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: -3rem;
+    transform: translate(20%, -50%);
+  }
+  .hero-content h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h1 span {
+    font-size: 3rem;
   }
 }
-
 @media only screen and (max-width: 500px) {
-  .container {
-    width: 100%;
-    max-width: 100%;
+  .logo h1 {
+    font-size: 4rem;
   }
-  .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 7rem;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  .header {
+    min-height: 100vh;
   }
-  .nav-icons {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 0;
+  .header .hero-img {
+    bottom: -10%;
+    right: 0rem;
+    height: 65rem;
+    object-fit: contain;
   }
-  .nav-icons .icon-item {
-    padding: 0 0.5rem;
-    margin: 0;
+  .hero-content {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    transform: translate(20%, -50%);
   }
-  .nav-icons .icon-item img {
-    width: 80%;
+  .hero-content h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0.2rem;
   }
-  .nav-logo {
-    display: flex;
-  }
-  .nav-hamburger img {
-    width: 4rem;
-    height: 4rem;
-    margin-right: 4rem;
-  }
-  .nav-icons #cart-total {
-    font-size: 1rem;
+
+  .hero-content h1 span {
+    font-size: 3rem;
   }
 }

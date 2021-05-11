@@ -849,6 +849,27 @@ li {
   .testimonial h4 {
     font-size: 3rem;
   }
+  .product-banner {
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 50rem;
+    background-color: #b4e1b4;
+    color: #eef9ee;
+  }
+  .product-banner .left {
+    height: 29vh;
+  }
+  .product-header {
+    position: relative;
+    height: 48rem;
+    transition: all 0.5s ease;
+    z-index: 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .product-footer p {
+    margin: 1rem 0;
+  }
 }
 
 /* Carousel */

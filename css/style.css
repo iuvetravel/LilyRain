@@ -499,6 +499,10 @@ li {
   }
 }
 @media only screen and (max-width: 768px) {
+  .logo h1 {
+    margin-left: 1rem;
+  }
+
   .navigation {
     z-index: 999;
   }
@@ -606,16 +610,28 @@ li {
   .hero-content h1 span {
     font-size: 3rem;
   }
+
+  .advert-center {
+    display: grid;
+    grid-template-columns: 750px;
+    gap: 4rem;
+    align-items: center;
+    height: 99%;
+    margin: 1rem 1rem;
+    padding: 5rem 0;
+  }
   .advert-box {
-    height: 35rem;
+    height: 70rem;
   }
   .product:hover {
     transform: translateY(-5px);
   }
   .product-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     max-width: 100%;
-    gap: 25rem 1rem;
   }
+
   .product-banner .left {
     background: url(../img/banner1.png);
     object-fit: center;
@@ -636,6 +652,7 @@ li {
 @media only screen and (max-width: 500px) {
   .logo h1 {
     font-size: 3.5rem;
+    margin-left: 1rem;
   }
   .header {
     min-height: 100vh;
@@ -665,8 +682,22 @@ li {
     color: #fff;
   }
   .advert-box {
-    height: 34rem;
+    height: 30rem;
+    margin: 1rem 1rem;
+  }
+  .advert-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    height: 99%;
     margin: 1rem 0;
+    padding: 2rem 0;
+  }
+
+  .product-center {
+    display: grid;
+    grid-template-columns: 1fr;
   }
   .product {
     width: 100%;
@@ -689,5 +720,14 @@ li {
   }
   .product-banner .btn {
     font-size: 1.5rem;
+  }
+  .section {
+    padding: 2rem 0 2rem 0;
+  }
+  .featured-latest {
+    padding: 18rem 0;
+  }
+  .featured-latest-2 {
+    padding: 10rem 0;
   }
 }

@@ -417,6 +417,63 @@ li {
   font-size: 8rem;
   font-weight: bold;
 }
+
+/* Testimonial */
+
+.testimonial-center {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  gap: 12rem;
+  margin: 4rem 2rem 2rem 10rem;
+}
+.testimonial {
+  position: relative;
+  width: 500px;
+  padding: 5rem;
+  background-color: var(--dark);
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+  color: #b4e1b4;
+  transition: all 0.5s ease;
+  border-radius: 2rem;
+  text-align: center;
+}
+.testimonial:hover {
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+  transform: translateY(-1rem);
+}
+
+.testimonial span {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  font-size: 12rem;
+  transform: translate(-50%, 0);
+  line-height: 1;
+}
+.testimonial p {
+  margin: 1rem 0.3rem;
+  color: #fff;
+}
+.testimonial .rating {
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: #ffcc00;
+}
+.testimonial .img-cover img {
+  height: 100%;
+  object-fit: cover;
+  border-radius: 55%;
+  box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;
+}
+
+.testimonial h4 {
+  font-family: "Poiret One", sans-serif;
+  font-size: 5rem;
+  font-weight: 100;
+  color: #fff;
+  margin: 0.3rem 0;
+}
 /* End Main Area */
 
 /* ====================================================
@@ -452,6 +509,17 @@ li {
     height: 100%;
     width: 111%;
     background-color: #fff;
+  }
+  .testimonial-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    gap: 1rem;
+    margin: 2rem 0 0 0;
+  }
+  .testimonial {
+    position: relative;
+    width: 370px;
   }
 }
 
@@ -648,6 +716,17 @@ li {
   .container {
     padding: 0 0.1rem;
   }
+  .testimonial-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 4rem;
+    margin: 2rem 0 0 10rem;
+  }
+  .testimonial {
+    position: relative;
+    width: 570px;
+  }
 }
 @media only screen and (max-width: 500px) {
   .logo h1 {
@@ -729,5 +808,16 @@ li {
   }
   .featured-latest-2 {
     padding: 10rem 0;
+  }
+  .testimonial-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 4rem;
+    margin: 2rem 0 0 0;
+  }
+  .testimonial {
+    position: relative;
+    width: 370px;
   }
 }

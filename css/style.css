@@ -362,6 +362,61 @@ li {
   margin-bottom: 1rem;
 }
 /* End Featured Section */
+
+/* Latest Section */
+.featured-latest {
+  padding: 23rem 0;
+}
+.featured-latest-2 {
+  padding: 2rem 0;
+}
+
+/* Product Banner */
+.product-banner {
+  margin-top: 20rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 50rem;
+  background-color: #b4e1b4;
+  color: #eef9ee;
+}
+.product-banner .left {
+  background: url(../img/banner.png);
+  object-fit: center;
+  height: 100%;
+  width: 105%;
+  background-color: #fff;
+}
+.product-banner .right {
+  align-self: center;
+  text-align: center;
+  padding: 1.6rem;
+}
+.product-banner .content h2 {
+  color: #eef9ee;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+.product-banner .content span {
+  font-family: "Roboto", sans-serif;
+  font-size: 5rem;
+  font-weight: 100;
+  color: blue;
+  display: block;
+  font-weight: 700;
+}
+.product-banner .btn {
+  background-color: blue;
+  color: #fff;
+}
+.product-banner .btn:hover {
+  background-color: #fff;
+  color: blue;
+}
+.product-banner .content .discount {
+  font-size: 8rem;
+  font-weight: bold;
+}
 /* End Main Area */
 
 /* ====================================================
@@ -390,6 +445,13 @@ li {
   }
   .advert-box {
     height: 35rem;
+  }
+  .product-banner .left {
+    background: url(../img/banner1.png);
+    object-fit: center;
+    height: 100%;
+    width: 111%;
+    background-color: #fff;
   }
 }
 
@@ -420,6 +482,20 @@ li {
   }
   .advert-box {
     height: 45rem;
+  }
+  .product-center {
+    max-width: 100%;
+    gap: 25rem 1rem;
+  }
+  .product-banner .left {
+    background: url(../img/banner.png);
+    object-fit: center;
+    height: 100%;
+    width: 105%;
+    background-color: #fff;
+  }
+  .product-banner .content h2 span {
+    font-size: 4rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -533,6 +609,29 @@ li {
   .advert-box {
     height: 35rem;
   }
+  .product:hover {
+    transform: translateY(-5px);
+  }
+  .product-center {
+    max-width: 100%;
+    gap: 25rem 1rem;
+  }
+  .product-banner .left {
+    background: url(../img/banner1.png);
+    object-fit: center;
+    height: 100%;
+    width: 105%;
+    background-color: #fff;
+  }
+  .product-banner .content h2 {
+    font-size: 3rem;
+  }
+  .product-banner .content span {
+    font-size: 3rem;
+  }
+  .container {
+    padding: 0 0.1rem;
+  }
 }
 @media only screen and (max-width: 500px) {
   .logo h1 {
@@ -572,5 +671,23 @@ li {
   .product {
     width: 100%;
     margin: 1rem 0;
+  }
+  .title h1 {
+    font-size: 4rem;
+  }
+  .container {
+    padding: 0 0.1rem;
+  }
+  .product-banner .content h2 {
+    font-size: 2rem;
+  }
+  .product-banner .content span {
+    font-size: 2rem;
+  }
+  .product-banner .content .discount {
+    font-size: 4rem;
+  }
+  .product-banner .btn {
+    font-size: 1.5rem;
   }
 }

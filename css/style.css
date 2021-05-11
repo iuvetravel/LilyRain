@@ -376,7 +376,7 @@ li {
   padding: 23rem 0;
 }
 .featured-latest-2 {
-  padding: 2rem 0;
+  padding: 4rem 0;
 }
 
 /* Product Banner */
@@ -812,7 +812,8 @@ li {
     font-size: 4rem;
   }
   .container {
-    padding: 0 0.1rem;
+    margin: 0 1rem;
+    padding: 0 1.5rem;
   }
   .product-banner .content h2 {
     font-size: 2rem;
@@ -830,21 +831,21 @@ li {
     padding: 2rem 0 2rem 0;
   }
   .featured-latest {
-    padding: 18rem 0;
+    padding: 12rem 0;
   }
   .featured-latest-2 {
-    padding: 10rem 0;
+    padding: 12rem 0;
   }
   .testimonial-center {
     display: grid;
     grid-template-columns: 1fr;
     align-content: center;
-    gap: 4rem;
-    margin: 2rem 0 0 2rem;
+    gap: 2rem;
+    margin: 2rem 0 0 0;
   }
   .testimonial {
     position: relative;
-    width: 360px;
+    width: 370px;
   }
   .testimonial h4 {
     font-size: 3rem;
@@ -853,7 +854,7 @@ li {
     margin-top: 15rem;
     display: grid;
     grid-template-columns: 1fr;
-    height: 50rem;
+    height: 40rem;
     background-color: #b4e1b4;
     color: #eef9ee;
   }

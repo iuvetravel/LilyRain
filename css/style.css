@@ -846,6 +846,9 @@ li {
     position: relative;
     width: 360px;
   }
+  .testimonial h4 {
+    font-size: 3rem;
+  }
 }
 
 /* Carousel */

@@ -764,7 +764,7 @@ li {
     min-height: 100vh;
   }
   .header .hero-img {
-    bottom: -15%;
+    bottom: -28%;
     right: 0rem;
     height: 65rem;
     object-fit: contain;
@@ -772,16 +772,21 @@ li {
   .hero-content {
     text-align: center;
     position: absolute;
-    top: 30%;
-    transform: translate(5%, -50%);
+    top: 35%;
+    left: 5%;
+    transform: translate(15%, -50%);
   }
   .hero-content h2 {
     font-family: "Roboto", sans-serif;
-    font-size: 4rem;
-    margin-top: 15rem;
+    font-size: 3rem;
+    margin-top: 1rem;
   }
   .hero-content .color {
-    font-size: 6rem;
+    font-size: 3rem;
+  }
+  .hero-.content .btn {
+    margin: 1rem 0;
+    padding: 0;
   }
 
   .hero-content h1 span {

@@ -871,6 +871,9 @@ li {
   .product-footer p {
     margin: 1rem 0;
   }
+  .container {
+    margin: 0 3rem 0 0;
+  }
 }
 
 /* Carousel */

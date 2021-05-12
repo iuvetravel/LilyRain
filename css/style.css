@@ -846,8 +846,8 @@ li {
   }
   .advert-box {
     height: 29rem;
-    width: 99vw;
-    margin: 1rem 1rem;
+    width: 97vw;
+    margin: 1rem auto;
   }
   .advert-center {
     display: grid;

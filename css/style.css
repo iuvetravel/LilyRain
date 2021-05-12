@@ -879,7 +879,7 @@ li {
     grid-template-columns: 1fr;
     align-content: center;
     gap: 2rem;
-    margin: 2rem 0 3rem 0;
+    margin: 2rem 0 0 3rem;
     width: 100%;
   }
   .testimonial {

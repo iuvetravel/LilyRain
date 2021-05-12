@@ -55,11 +55,11 @@ li {
 }
 
 .container {
-  max-width: 120rem;
+  max-width: 99vw;
   margin: 0 auto;
 }
 .container-md {
-  max-width: 100rem;
+  max-width: 99vw;
   margin: 0 auto;
 }
 
@@ -266,6 +266,7 @@ li {
 
 .product-center .container {
   height: 100%;
+  width: 99vw;
 }
 
 .product-center {
@@ -854,6 +855,7 @@ li {
     gap: 2rem;
     align-items: center;
     height: 100%;
+    width: 97vw;
     margin: 1rem 0;
     color: #fff;
   }
@@ -897,6 +899,7 @@ li {
     grid-template-columns: 1fr;
     align-content: center;
     gap: 2rem;
+    margin: 1rem 1rem;
 
     width: 29rem;
   }

@@ -784,8 +784,8 @@ li {
     font-size: 5rem;
   }
   .container {
-    padding: 0 0.1rem;
-    width: 97%;
+    padding: 0;
+    width: 99vw;
   }
   .testimonial-center {
     display: grid;
@@ -863,6 +863,7 @@ li {
   .product-center {
     display: grid;
     grid-template-columns: 1fr;
+    width: 97vw;
   }
   .product {
     width: 100%;
@@ -886,7 +887,7 @@ li {
   }
 
   .section {
-    padding: 2rem 0 2rem 0;
+    width: 100vw;
   }
   .featured-latest {
     padding: 12rem 0;
@@ -932,6 +933,7 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     height: 55rem;
+    width: 97vw;
     background-color: #b4e1b4;
     color: #eef9ee;
   }
@@ -956,6 +958,10 @@ li {
   }
   .bx-shopping-bag {
     margin-left: 2rem;
+  }
+  .container {
+    padding: 0;
+    width: 99vw;
   }
 }
 

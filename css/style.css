@@ -101,7 +101,7 @@ li {
 }
 
 .logo h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   cursor: pointer;
 }
@@ -112,7 +112,6 @@ li {
 .nav-list {
   font-family: "Poiret One", sans-serif;
   font-size: 2.5rem;
-  font-weight: 700;
   display: flex;
   align-items: center;
   z-index: 999;
@@ -797,7 +796,6 @@ li {
   }
   .container {
     padding: 0;
-    width: 99vw;
   }
   .testimonial-center {
     display: grid;
@@ -813,9 +811,13 @@ li {
 }
 @media only screen and (max-width: 500px) {
   .logo h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
+    font-size: 2.5rem;
     margin: 0;
+  }
+
+  .bx-shopping-bag,
+  .bx-menu {
+    font-size: 4rem;
   }
   .header {
     min-height: 100vh;
@@ -1011,7 +1013,6 @@ li {
   }
   .container {
     padding: 0;
-    width: 100vw;
   }
   .testimonials {
     padding: 0.2rem 0;

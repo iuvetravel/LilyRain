@@ -34,3 +34,13 @@ navClose.addEventListener("click", () => {
     navBar.classList.remove("show");
   }
 });
+
+const navHeight = navBar.getBoundingClientRect().height;
+window.addEventListener("scroll", () => {
+  const scrollHeight = window.pageYOffset;
+  if (scrollHeight > navHeight) {
+    navBar.classList.add("fix-nav");
+  } else {
+    navBar.classList.remove("fix-nav");
+  }
+});

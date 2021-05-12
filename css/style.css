@@ -73,10 +73,26 @@ li {
 
 .nav {
   padding: 2rem 0;
-  background-color: var(--light);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
     rgba(0, 0, 0, 0.22) 0px 10px 10px;
   z-index: 999;
+}
+
+.nav.fix-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #408080;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav.fix-nav .nav-link,
+.nav.fix-nav .logo,
+.nav.fix-nav .cart-icon,
+.nav.fix-nav .hamburger {
+  color: #fff;
+  padding: 0 1rem;
 }
 .navigation {
   display: flex;
@@ -611,6 +627,7 @@ li {
     position: fixed;
     top: 0;
     left: 0;
+    background: #408080;
     width: 100%;
     z-index: 999;
   }
@@ -810,6 +827,24 @@ li {
     object-fit: contain;
   }
 
+  .nav.fix-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #408080;
+    width: 100%;
+    z-index: 999;
+  }
+
+  .nav.fix-nav .nav-link,
+  .nav.fix-nav .logo,
+  .nav.fix-nav .cart-icon,
+  .nav.fix-nav .hamburger {
+    color: #fff;
+  }
+  .navigation {
+    margin: 0 2rem;
+  }
   .nav-list a {
     line-height: 2;
   }

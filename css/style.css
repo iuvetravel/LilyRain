@@ -671,6 +671,12 @@ li {
     flex-direction: column;
     align-items: start;
     padding: 1rem 1.6rem;
+    margin: 3rem 0;
+  }
+
+  .nav-list a {
+    line-height: 3;
+    font-size: 4rem;
   }
   .nav-link,
   .nav-link:visited {
@@ -806,6 +812,10 @@ li {
     right: 0rem;
     height: 65rem;
     object-fit: contain;
+  }
+
+  .nav-list a {
+    line-height: 2;
   }
   .hero-content {
     text-align: center;

@@ -879,8 +879,8 @@ li {
     grid-template-columns: 1fr;
     align-content: center;
     gap: 2rem;
-    margin-left: 2rem;
-    width: 100%;
+
+    width: 29rem;
   }
   .testimonial {
     position: relative;

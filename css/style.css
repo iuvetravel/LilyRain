@@ -752,18 +752,29 @@ li {
     max-width: 100%;
   }
 
+  .product-banner {
+    margin-top: 15rem;
+    height: 50vh;
+  }
+
   .product-banner .left {
     background: url(../img/banner1.png);
     object-fit: center;
-    height: 100%;
-    width: 105%;
+    height: 50vh;
     background-color: #fff;
   }
+
+  .product-banner .right {
+    height: 50vh;
+  }
   .product-banner .content h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .product-banner .content span {
     font-size: 3rem;
+  }
+  .product-banner .content .discount {
+    font-size: 5rem;
   }
   .container {
     padding: 0 0.1rem;
@@ -774,7 +785,7 @@ li {
     grid-template-columns: 1fr;
     align-content: center;
     gap: 4rem;
-    margin: 2rem 0 0 10rem;
+    margin: 2rem 0 0 7rem;
   }
   .testimonial {
     position: relative;

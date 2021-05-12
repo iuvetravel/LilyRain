@@ -400,7 +400,6 @@ li {
 }
 .product-banner .left {
   background: url(../img/banner.png);
-  object-fit: center;
   height: 100%;
   width: 105%;
   background-color: #fff;
@@ -541,9 +540,8 @@ li {
   }
   .product-banner .left {
     background: url(../img/banner1.png);
-    object-fit: center;
     height: 100%;
-    width: 111%;
+    width: 100vw;
     background-color: #fff;
   }
   .testimonial-center {
@@ -593,9 +591,8 @@ li {
   }
   .product-banner .left {
     background: url(../img/banner.png);
-    object-fit: center;
     height: 100%;
-    width: 105%;
+    width: 100vw;
     background-color: #fff;
   }
   .product-banner .content h2 span {
@@ -766,7 +763,6 @@ li {
 
   .product-banner .left {
     background: url(../img/banner1.png);
-    object-fit: center;
     height: 50vh;
     background-color: #fff;
   }
@@ -943,13 +939,12 @@ li {
     display: grid;
     grid-template-columns: 1fr;
     height: 55rem;
-    width: 97vw;
+    width: 100vw;
     background-color: #b4e1b4;
     color: #eef9ee;
   }
   .product-banner .left {
     height: 20rem;
-    width: 100%;
   }
   .product-header {
     position: relative;
@@ -976,6 +971,12 @@ li {
   .container {
     padding: 0;
     width: 100vw;
+  }
+  .testimonials {
+    padding: 0.2rem 0;
+  }
+  .banner-1 {
+    padding: 0.2rem 0;
   }
 }
 

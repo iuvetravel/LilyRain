@@ -847,7 +847,7 @@ li {
   .advert-box {
     height: 29rem;
     width: 97vw;
-    margin: 1rem auto;
+    margin-top: 2rem;
   }
   .advert-center {
     display: grid;
@@ -855,8 +855,8 @@ li {
     gap: 2rem;
     align-items: center;
     height: 100%;
-    width: 97vw;
-    margin-right: 1rem;
+    width: 99vw;
+    margin-right: 2rem;
     color: #fff;
   }
 

@@ -886,11 +886,16 @@ li {
     font-size: 1.5rem;
   }
 
+  .product-banner .right {
+    width: 100vw;
+  }
+
   .section {
     width: 100vw;
   }
   .featured-latest {
-    padding: 10rem 0;
+    padding-bottom: 5rem;
+    padding-top: 10rem;
   }
   .featured-latest-2 {
     padding: 12rem 0;
@@ -907,6 +912,11 @@ li {
   .testimonial {
     position: relative;
     width: 95vw;
+    padding: 1rem 0;
+  }
+
+  .testimonial .title {
+    padding: 1rem 0;
   }
   .testimonial h4 {
     font-size: 3rem;
@@ -957,7 +967,6 @@ li {
   .product {
     width: 94vw;
   }
-
   .hamburger {
     padding: 0 3rem;
   }

@@ -951,8 +951,11 @@ li {
   .product-footer p {
     text-decoration: none;
   }
+  .product-footer {
+    max-width: 97vw;
+  }
   .product {
-    width: 97vw;
+    width: 94vw;
   }
 
   .hamburger {
@@ -963,7 +966,7 @@ li {
   }
   .container {
     padding: 0;
-    width: 99vw;
+    width: 100vw;
   }
 }
 

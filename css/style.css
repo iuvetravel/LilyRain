@@ -847,9 +847,7 @@ li {
   .nav.fix-nav .hamburger {
     color: #fff;
   }
-  .navigation {
-    margin: 0 0.5rem;
-  }
+
   .nav-list a {
     line-height: 2;
   }

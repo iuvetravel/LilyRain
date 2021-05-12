@@ -848,7 +848,8 @@ li {
     color: #fff;
   }
   .nav.fix-nav {
-    margin-right: 1rem;
+    padding-top: 1rem;
+    margin-right: 2rem;
     padding: 1rem 0;
   }
   .nav-list a {

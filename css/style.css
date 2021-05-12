@@ -442,10 +442,11 @@ li {
   grid-template-columns: 1fr 1fr 1fr;
   align-content: center;
   gap: 12rem;
-  margin: 2rem 0;
+  margin: 4rem 2rem 2rem 10rem;
 }
 .testimonial {
   position: relative;
+  width: 500px;
   padding: 5rem;
   background-color: var(--dark);
   box-shadow: rgba(0, 0, 0, 0.95) 0px 5px 15px;

@@ -827,6 +827,11 @@ li {
     object-fit: contain;
   }
 
+  .nav {
+    margin: 0;
+    padding: 0;
+  }
+
   .nav.fix-nav {
     position: fixed;
     top: 0;

@@ -623,6 +623,7 @@ li {
   .nav.fix-nav .cart-icon,
   .nav.fix-nav .hamburger {
     color: #fff;
+    padding: 0 1rem;
   }
   .menu {
     position: fixed;

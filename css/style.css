@@ -879,12 +879,12 @@ li {
     grid-template-columns: 1fr;
     align-content: center;
     gap: 2rem;
-    margin: 2rem 0.5rem;
+    margin: 2rem 0;
     width: 100%;
   }
   .testimonial {
     position: relative;
-    width: 350px;
+    width: 365px;
   }
   .testimonial h4 {
     font-size: 3rem;

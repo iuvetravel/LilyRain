@@ -824,7 +824,7 @@ li {
   .advert-box {
     height: 29rem;
     width: 29rem;
-    margin: 1rem 0;
+    margin: 1rem 1rem;
   }
   .advert-center {
     display: grid;

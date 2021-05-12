@@ -884,7 +884,7 @@ li {
   }
   .testimonial {
     position: relative;
-    width: 370px;
+    width: 100vw;
   }
   .testimonial h4 {
     font-size: 3rem;

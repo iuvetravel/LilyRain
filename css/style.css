@@ -847,7 +847,10 @@ li {
   .nav.fix-nav .hamburger {
     color: #fff;
   }
-
+  .nav.fix-nav {
+    margin: 0;
+    padding: 1rem 0;
+  }
   .nav-list a {
     line-height: 2;
   }

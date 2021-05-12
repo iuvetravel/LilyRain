@@ -890,7 +890,7 @@ li {
     width: 100vw;
   }
   .featured-latest {
-    padding: 12rem 0;
+    padding: 10rem 0;
   }
   .featured-latest-2 {
     padding: 12rem 0;
@@ -949,8 +949,10 @@ li {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
   .product-footer p {
-    margin: 1rem 0;
     text-decoration: none;
+  }
+  .product {
+    width: 97vw;
   }
 
   .hamburger {

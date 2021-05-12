@@ -879,7 +879,8 @@ li {
     grid-template-columns: 1fr;
     align-content: center;
     gap: 2rem;
-    margin: 2rem 0 0 0;
+    margin: 2rem 0.5rem;
+    width: 98%;
   }
   .testimonial {
     position: relative;
@@ -904,6 +905,7 @@ li {
   .testimonial .rating {
     font-size: 2rem;
   }
+
   .product-banner {
     margin-top: 15rem;
     display: grid;

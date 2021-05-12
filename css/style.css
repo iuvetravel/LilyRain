@@ -848,9 +848,8 @@ li {
     color: #fff;
   }
   .nav.fix-nav {
-    padding-top: 1rem;
-    margin-right: 2rem;
-    padding: 1rem 0;
+    top: 0;
+    left: 0;
   }
   .nav-list a {
     line-height: 2;
